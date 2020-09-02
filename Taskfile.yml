@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+    run:
+        cmds:
+            - go run .
+    dbuild:
+        cmds:
+            - docker build -t go-oop-showcase .
+    drun:
+        cmds:
+            - docker run -it --rm --name go-oop-showcase-container go-oop-showcase
